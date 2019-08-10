@@ -1,5 +1,5 @@
 ---
-title: "New Document"
+title: "Title"
 author: Tom Mason
 date: '`r Sys.Date()`'
 output:
@@ -10,6 +10,4 @@ output:
     df_print: paged
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
