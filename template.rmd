@@ -4,6 +4,8 @@ author: Tom Mason
 date: '`r Sys.Date()`'
 output:
   html_document:
+    toc: true
+    toc_float: true
     code_folding: hide
     theme: flatly
     highlight: pygments
