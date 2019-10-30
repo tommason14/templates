@@ -3,11 +3,9 @@ title: "Title"
 author: Tom Mason
 date: '`r Sys.Date()`'
 output:
-  html_document:
-    toc: true
-    toc_float: true
+  rmdformats::readthedown:
     code_folding: hide
-    theme: flatly
     highlight: pygments
     df_print: paged
+    css: "`r path.expand('~/Documents/repos/templates/green.css')`"
 ---
