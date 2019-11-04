@@ -7,5 +7,5 @@ output:
     code_folding: hide
     highlight: pygments
     df_print: paged
-    css: "`r path.expand('~/Documents/repos/templates/green.css')`"
+    css: "$HOME/Documents/repos/templates/blue.css"
 ---
