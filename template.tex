@@ -1,0 +1,138 @@
+\documentclass{article}
+
+% Standard
+\usepackage{amsmath}
+
+% Chem stuff
+\usepackage{mhchem}
+
+% Citations
+\usepackage[super,sort&compress,comma]{natbib}
+\renewcommand{\bibname}{References}
+\usepackage{notoccite} 
+% Start numbering from main text, not including citations in captions of tables/figures that would appear first in the table of contents
+
+\usepackage{graphicx}
+% \graphicspath{{../figures/}}
+\usepackage{subcaption}
+
+% Define your own colours
+\usepackage{xcolor}
+\definecolor{myblue}{HTML}{0064ff}
+
+% Hyperlink colours
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=myblue, citecolor=myblue,
+urlcolor=myblue}
+
+% cross referencing
+\usepackage{cleveref}
+
+\usepackage{multirow}
+
+% Fonts 
+\usepackage{fontspec}
+\newfontfamily\secfont{Adobe Caslon Pro}
+% or normal font
+% \newfontfamily\secfont{\rmfamily}
+
+
+% Headings/Chapters
+\usepackage{titlesec, blindtext, color}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\secfont\mdseries\scshape\Huge}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\secfont\mdseries\scshape\Huge}
+
+
+\titleformat*{\section}{\secfont\mdseries\scshape\LARGE}
+\titleformat*{\subsection}{\secfont\mdseries\scshape\LARGE}
+\titleformat*{\subsubsection}{\secfont\mdseries\scshape\Large}
+
+
+% Table of contents formatting
+\renewcommand{\contentsname}{\secfont\mdseries\scshape\Huge Table of Contents}
+\setcounter{tocdepth}{2}
+% List of ...
+\renewcommand{\listfigurename}{\secfont\mdseries\scshape\Huge List of Figures}
+\renewcommand{\listtablename}{\secfont\mdseries\scshape\Huge List of Tables}
+
+
+% CODE BLOCKS
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{color}
+
+\usepackage{balance}
+\usepackage[justification=centering]{caption}
+
+\usepackage{siunitx}
+
+% Adjust spacing between lines to 1.5
+\usepackage{setspace}
+%\onehalfspacing
+\doublespacing
+\raggedbottom
+
+% Set margins
+\usepackage[top=1.5in,bottom=1.5in,left=1.5in,right=1.4in]{geometry}
+\setlength{\parindent}{0pt}
+
+% No hyphenation
+\usepackage[none]{hyphenat}
+
+% Control image placement
+\usepackage{placeins}
+% \renewcommand{\topfraction}{0.85}
+% \renewcommand{\bottomfraction}{0.85}
+% \renewcommand{\textfraction}{0.15}
+% \renewcommand{\floatpagefraction}{0.7}
+
+% No line breaks in inline equations
+\relpenalty=10000
+
+% New commands
+
+\newcommand{\eq}[2]{\begin{equation} \label{eq:#1} #2 \end{equation}}
+
+\newcommand{\image}[4]
+{
+	\begin{figure}
+		\centering
+		\includegraphics[{#1}]{{#2}}
+		\caption{{#3}} \label{fig:#4}
+	\end{figure}
+}
+
+% Chem definitions
+\usepackage{xspace}
+\newcommand{\del}{\nabla}
+\newcommand{\angstrom}{{\AA}\xspace}
+\newcommand{\ab}{\textit{ab~initio}\xspace}
+\newcommand{\md}{molecular dynamics\xspace}
+\newcommand{\LJ}{Lennard-Jones\xspace}
+\newcommand{\DHu}{Debye-H{\"u}ckel\xspace}
+\newcommand{\etal}{\textit{et al.}\xspace}
+\newcommand{\kj}{kJ~mol$^{-1}$\xspace}
+\renewcommand{\deg}{$^{\circ}$\xspace}
+\newcommand{\degc}{$^{\circ}$C\xspace}
+
+% Molecules
+\newcommand{\n}[1]{N$_{#1}$\xspace} %\n2 -> N$_2$
+\newcommand{\h}[1]{H$_{#1}$\xspace}
+\newcommand{\co}[1]{CO$_{#1}$\xspace}
+\newcommand{\cmim}[1]{C$_{#1}$mim\xspace}
+\newcommand{\pnipam}{PNIPAAm\xspace}
+\newcommand{\cmimac}{[C$_2$mim][OAc]\xspace}
+
+\renewcommand{\cos}{$C_{OS}$\xspace}
+\newcommand{\css}{$C_{SS}$\xspace}
+\newcommand{\cnmr}{$^{13}$C-NMR\xspace}
+
+\title{Title here}
+\author{Tom Mason}
+\date{\today}
+
+\begin{document}
+
+
+\end{document}
