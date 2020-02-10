@@ -37,19 +37,24 @@ a:visited{
     color:#3d1308
 }
 
-/* Auto-expand div to fit wide graphs */
+/* code output tuncated */
 
-/* Greek characters written as MathJax equations */
-/* Need to match header colours */
-/* If in navbar, don't change (.not isn't work) <- need Javascript for that, to
- * access parent selectors */
-/* Need some regex as well for the 1-6 */
-/* :not(.nav) #MathJax-Span-1, */
-/* :not(.nav) #MathJax-Span-2, */
-/* :not(.nav) #MathJax-Span-3, */
-/* :not(.nav) #MathJax-Span-4, */
-/* :not(.nav) #MathJax-Span-5, */
-/* :not(.nav) #MathJax-Span-6{ */
-/*     color: #4D4DFF; */
-/* } */
+pre {
+  /* max-width: 600px; */
+  max-height: 800px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
 
+/* Centre images */
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Expand to fit content */
+#content {
+  max-width: min-content;
+}
