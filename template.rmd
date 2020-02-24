@@ -7,5 +7,11 @@ output:
     code_folding: hide
     highlight: pygments
     df_print: paged
-    css: "$HOME/Documents/repos/templates/blue.css"
+    css: "$HOME/Documents/repos/templates/blue-default-width.css"
 ---
+
+```{r,setup, include=F}
+source('~/.Rprofile')
+knitr::opts_chunk$set(message=F, warning = F,
+                      dev.args=list(bg='transparent'))
+```

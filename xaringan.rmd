@@ -1,0 +1,19 @@
+---
+title:
+subtitle: 
+author: Tom Mason
+institute: Monash Uni
+date: "`r format(Sys.Date(), '%d %b %Y')`"
+output:
+  xaringan::moon_reader:
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+    css: ['metropolis', 'metropolis-fonts']
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(dev.args=list(bg='transparent'))
+```

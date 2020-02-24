@@ -19,5 +19,6 @@ link-citations: true
 
 ```{r, include=F}
 source('~/.Rprofile')
-knitr::opts_chunk$set(message=F, warning = F)
+knitr::opts_chunk$set(message=F, warning = F,
+                      dev.args=list(bg='transparent'))
 ```
