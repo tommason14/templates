@@ -2,17 +2,17 @@
 title: Title
 author: Tom Mason
 date: '`r format(Sys.Date(), "%d %b %Y")`'
-site: bookdown::bookdown_site
+#site: bookdown::bookdown_site
+knit: bookdown::render_book
 output:
   bookdown::gitbook:
-    includes:
-      in_header: '$HOME/Documents/repos/templates/rtemps_hide_code.html'
     config:
       toc:
         scroll_highlight: yes
         collapse: none
+    df_print: paged
     split_by: none
-    split_bib: false
+    self_contained: true
 bibliography: '`r path.expand('~/Documents/repos/thesis/refs.bib')`'
 link-citations: true
 ---
