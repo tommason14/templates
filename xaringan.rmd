@@ -1,19 +1,31 @@
 ---
-title:
-subtitle: 
-author: Tom Mason
-institute: Monash Uni
+title: "Title"
+subtitle: "subtitle"
+author: "Tom Mason"
+institute: ""
 date: "`r format(Sys.Date(), '%d %b %Y')`"
 output:
   xaringan::moon_reader:
+    css: xaringan-themer.css
+    lib_dir: libs
     nature:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
-    css: ['metropolis', 'metropolis-fonts']
+    standalone: true
 ---
 
 ```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-knitr::opts_chunk$set(dev.args=list(bg='transparent'))
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#035AA6",        # blue
+  secondary_color = "#03A696",      # sea green
+  header_font_google = google_font("Arima Madurai"),
+  text_font_google = google_font("Raleway"),
+  header_h1_font_size = "3.5rem",
+  header_h2_font_size = "2.75rem"
+)
+
+knitr::opts_chunk$set(dpi=300)
+xaringanExtra::use_xaringan_extra("tile_view")
 ```
