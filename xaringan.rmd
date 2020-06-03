@@ -26,6 +26,6 @@ style_duo_accent(
   header_h2_font_size = "2.75rem"
 )
 
-knitr::opts_chunk$set(dpi=300)
+knitr::opts_chunk$set(dpi=300, warning=F, message=F)
 xaringanExtra::use_xaringan_extra("tile_view")
 ```
