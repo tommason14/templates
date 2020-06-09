@@ -113,3 +113,14 @@
 .font200 {
   font-size: 200%;
 }
+
+# layouts
+
+.left40 {
+  float: left;
+  width: 37%;
+}
+.right60 {
+  float: right;
+  width: 57%;
+}
