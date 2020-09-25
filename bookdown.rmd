@@ -11,10 +11,11 @@ output:
       toc:
         scroll_highlight: yes
         collapse: none
+    df_print: paged
     split_by: none
     split_bib: false
-bibliography: '`r path.expand('~/Documents/repos/thesis/refs.bib')`'
-link-citations: true
+# bibliography: '`r path.expand('~/Documents/repos/thesis/refs.bib')`'
+# link-citations: true
 ---
 
 ```{r, include=F}
